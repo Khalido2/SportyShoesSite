@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-image{
+  max-height: 100px;
+  max-width: 100px;
+
+  object-fit: cover;
+  padding: 20px;
+}
+
+.logo-text{
+  font-size: 32px;
+  color:#EBEAFF;
+  font-weight: 600;
+}
+
+.float-container {
+  display: flex;
+  align-items: center;
+}
+
+ .navbar button{
+  color:transparent;
+  max-width: 50px;
+  max-height: 50px;
+
+  border: none;
+  padding: 0px;
+}
+
+div .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: #3D3BF3;
+  padding: 10px 30px;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-menu{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar-menu-header{
+  font-size: 25px;
+  color:#EBEAFF;
+}
+
+.navbar-icon {
+  max-height: 40px;
+  max-width: 40px;
+  padding: 5px;
+}
+
+.shoe-image {
+  max-height: 150px;
+  max-width: 150px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div .shoeview  {
+ align-content: center;
+ 
+  max-height: 400px;
+  max-width: 300px;
+  border-radius: 10px;
+  border-style:double;
+  border-color: #3D3BF3;
+  padding: 30px;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.carousel-item {
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  max-width: 300px;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 384px) {
+  .carousel-item {
+      flex: 1 1 calc(50% - 40px);
+  }
+}
+@media (max-width: 240) {
+  .carousel-item {
+      flex: 1 1 100%;
+  }
+}
+
+.shoe-header {
+  padding: 10px;
+}
+
+.shoe-description {
+  padding: 5px;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
